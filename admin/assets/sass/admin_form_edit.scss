@@ -1,0 +1,297 @@
+// hot fix
+#infocob_crm_forms_admin_form_config {
+    overflow: hidden;
+}
+
+.ms-drop input[type="checkbox"] {
+    margin-top: 0.15rem;
+}
+
+.ms-choice > div {
+    background: none;
+
+    &.open {
+        background: none;
+    }
+}
+
+span {
+    &.text {
+        &.red {
+            color: red;
+        }
+
+        &.blue {
+            color: blue;
+        }
+
+        &.bold {
+            font-weight: bold;
+        }
+    }
+}
+
+input {
+    &.infocob_crm_forms_copy {
+        width: 250px;
+    }
+}
+
+.full-width {
+    width: 100% !important;
+
+    &.ms-parent {
+        width: 100% !important;
+    }
+}
+
+div.ms-parent {
+    width: 100% !important;
+}
+
+table.form-table {
+
+    select.input_type {
+        cursor: default;
+    }
+
+    .option-dashicon:before {
+        cursor: pointer;
+    }
+
+    .accordion-options {
+        .form-table {
+            border-collapse: separate;
+            border: 1px dashed grey;
+
+            .row-up-option, .row-down-option {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &.inputs, &.destinataires {
+        tr {
+            th {
+                text-align: center;
+
+                &.sm {
+                    width: 50px;
+                }
+            }
+
+            td {
+                text-align: center;
+
+                input:not([type='checkbox']), select {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+div.up-down-dashicons {
+    display: flex;
+    align-items: center;
+}
+
+.input-flex {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0 !important;
+}
+
+#mode_avance_console {
+    width: 100%;
+    height: 100px;
+}
+
+.mode-avance-console {
+    &.hidden {
+        display: none;
+    }
+}
+
+// ########################
+
+#inputsList {
+    //background: #f2f2f2;
+    padding: 30px 0;
+
+    .list-group-item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccd0d4;
+        border-radius: 5px;
+
+        &:hover {
+            border-color: #e85a0c;
+
+            &.nested-1:not(.nestedGroup) {
+                background: #faf3f1;
+            }
+        }
+
+        > div.rowInputField {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px;
+            //cursor: grab;
+
+            flex-wrap: nowrap;
+
+            > div {
+                //cursor: default;
+                align-self: center;
+                justify-content: center;
+
+                display: flex;
+                flex-shrink: 2;
+                flex-grow: 1;
+
+                .handle {
+                    cursor: move;
+                }
+
+                &.accept-file {
+                    flex-grow: 10;
+                    max-width: 150px;
+                    min-width: 75px;
+                }
+
+                &:first-child {
+                    justify-content: flex-start;
+                }
+
+                &:last-child {
+                    justify-content: flex-end;
+                }
+
+                .option-dashicon {
+                    width: 20px;
+                }
+
+                select, input:not([type='checkbox']) {
+                    min-width: 50px;
+                    width: 100%;
+                }
+            }
+        }
+
+        > div.options {
+
+        }
+
+
+        &.nested-1 {
+            background: #f1f1f1;
+            margin: 10px 0;
+            display: block;
+        }
+
+        &.nestedGroup {
+            background: white;
+            border: 2px dashed #ccd0d4;
+            padding: 20px;
+            margin: 10px 0;
+
+            .rowInputGroup {
+                display: flex;
+
+                div:not(.up-down-dashicons) {
+                    margin: 10px;
+
+                    label {
+                        margin-right: 10px;
+                    }
+                }
+
+                .inputsGroup {
+                    display: flex;
+                    width: 100%;
+
+                    select {
+                        min-width: 150px;
+                    }
+                }
+            }
+
+            .draggableZoneSeparator {
+                border-bottom: 1px dotted black;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+div.btnActions {
+    display: flex;
+    justify-content: center;
+
+    button {
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+/*
+    Logo email config
+ */
+.logo_email {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    .logo_actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+
+        button {
+            color: red;
+        }
+    }
+}
+
+/*
+    Attachments email config
+ */
+.attachments_email {
+
+    .add button {
+        width: 100%;
+    }
+
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            width: 150px;
+
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                figcaption {
+                    overflow: hidden;
+                    max-height: 50px;
+                    //line-height: 50px;
+                }
+            }
+        }
+    }
+
+}
+

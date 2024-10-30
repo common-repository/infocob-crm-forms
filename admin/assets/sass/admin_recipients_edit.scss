@@ -1,0 +1,27 @@
+#recipients-table {
+    thead {
+        tr {
+            th {
+                text-align: center;
+            }
+        }
+    }
+    
+    tbody {
+        tr {
+            td {
+                input:not([type=checkbox]) {
+                    width: 100%;
+                }
+                
+                &.has-checkbox {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    tfoot {
+        text-align: center;
+    }
+}

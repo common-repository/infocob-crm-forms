@@ -1,0 +1,24 @@
+option {
+    &.opt-level {
+        &.one {
+            font-weight: bold;
+        }
+        
+        &.two {
+            font-weight: normal;
+            padding-left: 15px;
+        }
+        
+        &.three {
+            font-weight: lighter;
+            padding-left: 30px;
+        }
+    }
+}
+
+tr.same-line {
+    td {
+        display: flex;
+        align-items: center;
+    }
+}

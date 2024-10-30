@@ -1,0 +1,30 @@
+{{ intro }}
+{{ title }}
+{% if form is iterable %}
+{% for champ in form %}
+{% if champ.valeur is iterable %}
+{% if champ.valeur is not empty %}
+{{ champ.libelle }} :
+{% if champ.valeur|length > 1 %}
+{% for valeur in champ.valeur %}
+* {{ valeur.libelle }}
+{% endfor %}
+{% else %}
+{% for valeur in champ.valeur %}
+* {{ valeur.libelle }}
+{% endfor %}
+{% endif %}
+{% endif %}
+{% else %}
+{% if champ.type == 'date' %}
+{% if champ.valeur != '' %}
+{{ champ.valeur|format_datetime('full', 'none', locale='fr') }}
+{% endif %}
+{% else %}
+{% if champ.type != 'file' %}
+{{ champ.libelle }} : {{ champ.valeur }}
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}

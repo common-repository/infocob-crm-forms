@@ -1,0 +1,71 @@
+#logs-file {
+    width: 100%;
+}
+
+#container-logs {
+    padding-right: 20px;
+
+    // Fix nb page selector
+    .dataTables_wrapper .dataTables_length select {
+        padding: 0 24px 0 8px;
+    }
+}
+
+#logs {
+    tbody {
+        & > tr {
+            &.error {
+                color: red;
+                font-weight: bold;
+            }
+
+            td {
+                white-space: pre-wrap;
+
+                &.detail {
+                    width: 100%;
+                    text-align: left;
+                }
+
+                &:nth-child(even) {
+                    background: #FFF;
+                }
+
+                &:nth-child(odd) {
+                    background: #f1f1f1;
+                }
+
+                input[type="button"] {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    pre {
+        outline: 1px solid #ccc;
+        padding: 5px;
+        margin: 5px;
+        text-wrap: unset;
+
+        .string {
+            color: green;
+        }
+
+        .number {
+            color: darkorange;
+        }
+
+        .boolean {
+            color: blue;
+        }
+
+        .null {
+            color: magenta;
+        }
+
+        .key {
+            color: red;
+        }
+    }
+}

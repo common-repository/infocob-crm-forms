@@ -1,0 +1,398 @@
+== Changelog ==
+
+= 2.3.7 =
+* Minors fixes
+
+= 2.3.6 =
+* Fixed duplicated mail's content
+
+= 2.3.5 =
+* Add custom capabilities (for admin & editor)
+- Administrator have all access
+- Editor can only create/edit forms and view logs
+* Possibility to deactivate GDPR checkbox on forms
+
+= 2.3.4 =
+* Customize the subject of your email with the data of your form (ex: Contact {{ city }} )
+* Choose to include or not the attachments from the form for the additional email
+* You can now include specific attachments for your additional email
+
+= 2.3.3 =
+* Minors fixes
+
+= 2.3.2 =
+* Support Wordpress 6.6
+* Fix form not sending in some cases
+
+= 2.3.1 =
+* Support Wordpress 6.5
+* Minors fixes
+
+= 2.3.0 =
+* Fix log file rights and save path (in some cases)
+
+= 2.2.9 =
+* New logs location
+
+= 2.2.8 =
+* Minors fixes
+
+= 2.2.7 =
+* Support Wordpress 6.4
+* Fix session_start loading
+
+= 2.2.6 =
+* Optimize loading 'wp_mail' function
+
+= 2.2.5 =
+* Support Wordpress 6.3
+
+= 2.2.4 =
+* WP_CLI commands added
+
+= 2.2.3 =
+* Support PHP 8.2
+* Fix styles logs
+
+= 2.2.2 =
+* Minor fixes with PHP 8.0
+
+= 2.2.1 =
+* Wordpress 6.2
+* Dependencies updated (security fixes)
+
+= 2.2.0 =
+* Wordpress 6.1
+
+= 2.1.9 =
+* Options's order for drop-down lists with advanced recipients was not followed.
+
+= 2.1.8 =
+* SMTP configuration added !
+
+= 2.1.7 =
+* Reply option added !
+
+= 2.1.6 =
+* Fix logs visualization
+
+= 2.1.5 =
+* Secure forms logs
+
+= 2.1.4 =
+* Forms logs added !
+
+= 2.1.3 =
+* Fix drag & drop form configuration
+
+= 2.1.2 =
+* Support hCaptcha
+
+= 2.1.1 =
+* Textarea no longer ignore the "required" attribute
+
+= 2.1.0 =
+* Wordpress 6 compatibility
+* Bug fixes
+
+= 2.0.9 =
+* New file extensions for input files
+
+= 2.0.8 =
+* Fix 'Advanced recipients' configuration
+
+= 2.0.7 =
+* Bug fixes
+
+= 2.0.6 =
+* New hooks filter 'infocob_forms_before_data' and 'infocob_forms_before_files' triggers before any treatment
+
+= 2.0.5 =
+* New hook action 'infocob-crm-forms-after-infocob' after sending data to Infocob
+
+= 2.0.4 =
+* You can now override AC_DUREEREELLEESTIME on Infocob's links
+
+= 2.0.3 =
+* Fix error when mail not configured on the server
+
+= 2.0.2 =
+* Fix cloud files with Infocob
+
+= 2.0.1 =
+* Fix mail encoding
+* Recaptcha token is now loaded when submitting the form
+
+= 2.0.0 =
+* Link with product inventory from Infocob CRM added
+* Additional email with advanced recipients fixed
+* Import/Export take into account the additional email configuration from forms
+* Import/Export CRM configuration
+
+= 1.9.9 =
+* Added security on submit forms button to prevent spam clicks
+
+= 1.9.8 =
+* Required file type field fixed
+
+= 1.9.7 =
+* Bug fixes
+
+= 1.9.6 =
+* Bug fixes
+
+= 1.9.5 =
+* Bug fixes
+
+= 1.9.4 =
+* Bug fixes
+
+= 1.9.3 =
+* Bug fixes
+
+= 1.9.2 =
+* New option to invert checkbox value
+
+= 1.9.1 =
+* Bug fixes
+
+= 1.9.0 =
+* Bug fixes
+
+= 1.8.9 =
+* New option to upload cloud files with Infocob
+* Bug fixes
+
+= 1.8.8 =
+* New option to disable select2 library
+* Handle multiple files in one input for forms
+
+= 1.8.7 =
+* Bug fixes
+
+= 1.8.6 =
+* Bug fixes
+
+= 1.8.5 =
+* Bug fixes
+
+= 1.8.4 =
+* Resources files optimisation
+
+= 1.8.3 =
+* Bug fixes
+
+= 1.8.2 =
+* Fix Infocob link for multiple-value fields
+
+= 1.8.1 =
+* New options for the number field in forms
+
+= 1.8.0 =
+* New ! Advanced email recipients for forms
+* Bug fixes
+
+= 1.7.8 =
+* Bug fixes Google recaptcha V3
+* Performance improvements
+
+= 1.7.7 =
+* Bug fixes
+
+= 1.7.6 =
+* Google recaptcha V3 support
+
+= 1.7.5 =
+* Bug fixes
+
+= 1.7.4 =
+* Bug fixes
+
+= 1.7.3 =
+* Bug fixes
+* Message styles improvements
+
+= 1.7.2 =
+* Bug fixes
+
+= 1.7.1 =
+* Bug fixes
+
+= 1.7.0 =
+* Bug fixes PHPMailer
+* Bug fixes mail attachments
+
+= 1.6.9 =
+* Bug fixes
+
+= 1.6.8 =
+* Bug fixes
+
+= 1.6.7 =
+* Bug fixes
+
+= 1.6.6 =
+* Bug fixes mail attachments
+
+= 1.6.5 =
+* Fix multiple select field in mail template
+
+= 1.6.4 =
+* Bug fixes
+
+= 1.6.3 =
+* Bug fixes
+
+= 1.6.2 =
+* Bug fixes
+
+= 1.6.1 =
+* Additional emails available in forms configuration
+* Bug fixes
+
+= 1.6.0 =
+* Bug fixes
+
+= 1.5.9 =
+* Form types added ('crm-mobile' & 'espace-clients')
+* Bug fixes
+
+= 1.5.8 =
+* Bug fixes
+
+= 1.5.7 =
+* Gutenberg forms list block added
+
+= 1.5.6 =
+* Bug fixes
+
+= 1.5.5 =
+* Bug fixes 'Contact Form 7' plugin
+
+= 1.5.4 =
+* Polylang support
+
+= 1.5.3 =
+* Addition of the french language
+
+= 1.5.2 =
+* Change default back office language to english
+
+= 1.5.1 =
+* Addition of a loading indicator when submitting an Infocob form
+* Various improvements & fixes
+
+= 1.5.0 =
+* Added support for the 'Contract' table in CRM links
+* Add customization options of email template
+* Update the default mail template
+* Bug fixes
+
+= 1.4.9 =
+* Bug fixes
+* Addition of the overload of action types via the Infocob form.
+
+= 1.4.8 =
+* Possibility of adding a logo in the mail template
+* Addition of an option to display / hide the search field on the drop-down lists
+* Added grid support in 12 columns for forms
+* Various improvements / fixes
+
+= 1.4.7 =
+* Addition of options for the Ticket table in the management of CRM links
+* Add hooks 'infocob_forms_before' & 'infocob_forms_after' on Infocob forms
+
+= 1.4.6 =
+* Addition of the Ticket table in the management of CRM links
+
+= 1.4.5 =
+* Bug fixes
+
+= 1.4.4 =
+* Adding a redirect option after sending a form.
+
+= 1.4.3 =
+* Added management of field groups (fieldsets / 1st level only).
+
+= 1.4.2 =
+* Bugfix.
+
+= 1.4.1 =
+* Fixed display of mandatory 'select' fields.
+
+= 1.4.0 =
+* Addition of a mail template system.
+* Addition of an option for creating alarm actions for reporting forms.
+
+= 1.3.9 =
+* Addition of import / export and duplication functions of infocob forms.
+
+= 1.3.8 =
+* Addition of the 'date' type in the configuration of the forms.
+
+= 1.3.7 =
+* Addition of an option in 'Settings' to activate updates 'breaking changes' (deactivated by default).
+
+= 1.3.6 =
+* Wrap management for displaying textarea type fields in forms.
+
+= 1.3.5 =
+* Addition of the type 'tel' in the configuration of the forms
+* Added support for forms on 6 columns.
+* Addition of simple customization options for the mail template.
+
+= 1.3.4 =
+* Correction of various bugs
+
+= 1.3.3 =
+* Correction of a bug when sending "Contact Form 7" forms if the Infocob CRM lift is not configured.
+
+= 1.3.2 =
+* Correction of the configuration of the forms
+
+= 1.3.1 =
+* Various improvements
+* Bug fixes
+
+= 1.3.0 =
+* Redesigned interface
+* Performance improvements
+* Possibility of creating simple forms (without Contact form 7)
+
+= 1.2.2 =
+* Bug fixes
+
+= 1.2.1 =
+* UI improvements / bug fixes
+
+= 1.2.0 =
+* New! Ability to upload linked files to Infocob.
+
+= 1.1.0 =
+* New! Support for the "Product" table
+* Some bug fixes
+* Minor improvements to the forms configuration interface
+
+= 1.0.7 =
+* Better support for Contact Form 7 acceptance fields.
+
+= 1.0.6 =
+* Improvement of the detail of the escalation of an action to Infocob.
+
+= 1.0.5 =
+* Correction of infocob ascent with check boxes.
+
+= 1.0.4 =
+* Corrections of a bug preventing the list of Infocob fields from being displayed.
+
+= 1.0.3 =
+* Bug fixes.
+
+= 1.0.2 =
+* Correction of a configuration bug with forms.
+
+= 1.0.1 =
+* Style corrections.
+
+= 1.0.0 =
+* First version of Infocob CRM Forms available.

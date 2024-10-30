@@ -1,0 +1,36 @@
+{
+	"name": "infocob/crm-forms",
+	"config": {
+		"platform": {
+			"php": "7.4"
+		}
+	},
+	"require": {
+		"ext-json": "*",
+		"ext-curl": "*",
+		"monolog/monolog": "^2.8",
+		"twig/twig": "^3.0",
+		"twig/intl-extra": "^3.2",
+		"firebase/php-jwt": "^6.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Infocob\\CrmForms\\Admin\\WPCli\\": [
+				"admin/classes/wp-cli"
+			],
+			"Infocob\\CrmForms\\Admin\\": [
+				"admin/classes",
+				"admin/classes/form",
+				"admin/classes/mail",
+				"admin/classes/upgrades",
+				"admin/classes/upgrades/versions",
+				"admin/controllers",
+				"admin/includes",
+				"admin/views"
+			],
+			"Infocob\\CrmForms\\": [
+				""
+			]
+		}
+	}
+}
